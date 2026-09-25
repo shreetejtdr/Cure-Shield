@@ -1,0 +1,66 @@
+[
+    {
+        "id": "Demo-001",
+        "name":"product name cheack",
+        "logic": {
+            "!!":[
+            {"var": "declarations.productName"}
+            ]
+        },
+        "failureMessage": "Product name is missing from the suplied data"
+    },
+    { "id":"Demo-002", 
+    "name" : "net qantity cheack",
+    "logic":{
+        "and":[
+            {
+                ">":[
+                    {"var": "declarations.netQuantity"},
+                    0
+                ]
+                
+            },
+            {
+                "in":[
+                    {"var":"declarations.quantityUnit"},
+                    ["g", "kg"]
+                ]
+            }
+        ]
+        
+    },
+    "failureMessage":"Provided a positive net quantity with g and kg"
+},
+    {"id":"Demo-003",
+    "name":"mrp value cheack",
+    "logic":{
+      ">":[
+            {"var":"declarations.mrp"},
+        0
+    ]
+},
+"failureMessage":"Mrp is missing or is not greater than zero in supplied data."
+},
+{"id":"Demo-004",
+"name":"Currency cheack",
+"logic":{
+    "===":[
+        {"var": "declarations.currency"},
+        "INR"
+    ]
+},
+"faliureMessage":"Currency is missing or is not the INR in supplied data."
+},
+{"id": "Demo-005",
+"name":"Tax-inclusive wording cheack",
+"logic":{
+    "===":[
+        {"var":"declarations.taxInclusive"},
+        true
+    ]
+},
+ "failureMessage":"Tax-inclusive wording is not confirmed in the supplied data. Review the label."
+}
+
+    
+]

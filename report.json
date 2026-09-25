@@ -1,0 +1,39 @@
+{
+  "checkedAt": "2026-09-25T13:03:18.588Z",
+  "totalRules": 5,
+  "passed": 5,
+  "failed": 0,
+  "manualVerification": 0,
+  "results": [
+    {
+      "ruleId": "Demo-001",
+      "name": "product name cheack",
+      "status": "PASS",
+      "message": "The supplied data passed this check."
+    },
+    {
+      "ruleId": "Demo-002",
+      "name": "net qantity cheack",
+      "status": "PASS",
+      "message": "The supplied data passed this check."
+    },
+    {
+      "ruleId": "Demo-003",
+      "name": "mrp value cheack",
+      "status": "PASS",
+      "message": "The supplied data passed this check."
+    },
+    {
+      "ruleId": "Demo-004",
+      "name": "Currency cheack",
+      "status": "PASS",
+      "message": "The supplied data passed this check."
+    },
+    {
+      "ruleId": "Demo-005",
+      "name": "Tax-inclusive wording cheack",
+      "status": "PASS",
+      "message": "The supplied data passed this check."
+    }
+  ]
+}
